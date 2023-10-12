@@ -14,6 +14,9 @@
 		3F50CAB32AD753D900FB2885 /* Begininng_IPhone_Ch18_GridsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F50CAB22AD753D900FB2885 /* Begininng_IPhone_Ch18_GridsTests.swift */; };
 		3F50CABD2AD753D900FB2885 /* Begininng_IPhone_Ch18_GridsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F50CABC2AD753D900FB2885 /* Begininng_IPhone_Ch18_GridsUITests.swift */; };
 		3F50CABF2AD753D900FB2885 /* Begininng_IPhone_Ch18_GridsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F50CABE2AD753D900FB2885 /* Begininng_IPhone_Ch18_GridsUITestsLaunchTests.swift */; };
+		3FF898C82AD7A93400009672 /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF898C72AD7A93400009672 /* HGrid.swift */; };
+		3FF898CA2AD7A94B00009672 /* VGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF898C92AD7A94B00009672 /* VGrid.swift */; };
+		3FF898CC2AD7A95E00009672 /* UploadPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF898CB2AD7A95E00009672 /* UploadPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		3F50CAB82AD753D900FB2885 /* Begininng-IPhone-Ch18-GridsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Begininng-IPhone-Ch18-GridsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F50CABC2AD753D900FB2885 /* Begininng_IPhone_Ch18_GridsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Begininng_IPhone_Ch18_GridsUITests.swift; sourceTree = "<group>"; };
 		3F50CABE2AD753D900FB2885 /* Begininng_IPhone_Ch18_GridsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Begininng_IPhone_Ch18_GridsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FF898C72AD7A93400009672 /* HGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGrid.swift; sourceTree = "<group>"; };
+		3FF898C92AD7A94B00009672 /* VGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGrid.swift; sourceTree = "<group>"; };
+		3FF898CB2AD7A95E00009672 /* UploadPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhoto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				3F50CAA42AD753D800FB2885 /* Assets.xcassets */,
 				3F50CAA62AD753D800FB2885 /* Begininng_IPhone_Ch18_Grids.entitlements */,
 				3F50CAA72AD753D800FB2885 /* Preview Content */,
+				3FF898C72AD7A93400009672 /* HGrid.swift */,
+				3FF898C92AD7A94B00009672 /* VGrid.swift */,
+				3FF898CB2AD7A95E00009672 /* UploadPhoto.swift */,
 			);
 			path = "Begininng-IPhone-Ch18-Grids";
 			sourceTree = "<group>";
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF898CC2AD7A95E00009672 /* UploadPhoto.swift in Sources */,
 				3F50CAA32AD753D600FB2885 /* ContentView.swift in Sources */,
+				3FF898C82AD7A93400009672 /* HGrid.swift in Sources */,
+				3FF898CA2AD7A94B00009672 /* VGrid.swift in Sources */,
 				3F50CAA12AD753D600FB2885 /* Begininng_IPhone_Ch18_GridsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,10 +452,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "MobileApps-Cascadia.Begininng-IPhone-Ch18-Grids";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,10 +489,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "MobileApps-Cascadia.Begininng-IPhone-Ch18-Grids";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
